@@ -1,0 +1,54 @@
+/* 
+    Document   : print_style
+    Created on : Nov 17, 2010, 1:25:55 PM
+    Author     : SANTOSML
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    font-family: arial,verdana,tahoma;
+    font-size: 8pt;
+}
+
+#menu{
+    display: none;
+}
+input[type=button]{
+    display: none;
+}
+
+.botao_impressao {
+    display: none;
+}
+
+.tablesorter {
+    background-color:ffffff;
+    border-style:solid;
+    border-color:black;
+    border-width:1px;
+    border-collapse:collapse;
+
+}
+
+.tablesorter tbody tr td {
+    border-color:black;
+    border-style: solid;
+    border-width:1px;
+}
+
+.tablesorter tbody tr th {
+    background-color: gray;
+    border-color:black;
+    border-style: solid;
+    border-width:1px;
+}

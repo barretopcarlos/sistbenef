@@ -1,0 +1,53 @@
+[GET]
+http://10.120.100.165/beneficios/?/educationDependAll/138341770
+
+
+
+[POST]
+http://localhost/beneficios/?/education/getBestValorTeto
+http://localhost/beneficios/?/education/getValorDependenteByComp
+http://localhost/beneficios/?/education/getValorByContrato
+
+
+
+
+http://10.120.100.165/servico_ergon/?/funcionario/listAllDepend/138341770
+http://10.120.100.165/servico_ergon/?/funcionario/listBeneficiario/8935966711
+http://10.120.100.165/servico_ergon/?/funcionario/listAll
+http://10.120.100.165/servico_ergon/?/funcionario/loadTipoDepend
+http://10.120.100.165/servico_ergon/?/funcionario/load/138341770
+
+
+
+CARGA SIGRH
+http://10.120.100.165/servico_ergon/?/funcionario/cargaBeneficiarios
+http://10.120.100.165/servico_ergon/?/funcionario/cargaDependentes/cpf
+
+
+
+http://localhost/sigrh-mysql/?/funcionario/listAll
+http://localhost/sigrh-mysql/?/funcionario/listAllDepend/138341770
+http://localhost/sigrh-mysql/?/funcionario/listBeneficiario/8935966711
+http://localhost/sigrh-mysql/?/funcionario/listBeneficiarioByLogin/nobret [desenvolver]
+
+http://localhost/sigrh-mysql/?/funcionario/listDetails/:email
+http://10.120.100.165/sigrh_mysql/?/funcionario/listDetails/thiagobraganobre@gmail.com
+
+
+perfis do sistema
+Grupo 1: SistemaBeneficios_Analista
+Grupo 2: SistemaBeneficios_Beneficiario
+Grupo 3: SistemaBeneficios_Gestor
+
+
+
+v1.0.0
+versão fechou com inclusao de notificacoes e ajuste de cadastro de intituicao de educacao internacional
+
+v1.0.1
+Aqui terá as melhorias relativas ao modulo educacao para primeiro lançamento
+
+
+servico_ergon
+sigrh-mysql
+ORC

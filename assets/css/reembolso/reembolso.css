@@ -1,0 +1,89 @@
+.container{
+    font-family: 'Averta-bold';
+}
+.breadcrumb {
+    background-color: transparent !important;
+    padding: 0 0 0 0 !important;
+    font-size: 14px !important;
+}
+
+.breadcrumb a {
+    color: #005A92 !important;
+    text-decoration: none;
+}
+
+.texto-breadcrumb{
+    color: #005A92 !important;
+    font-weight: bold !important;
+}
+
+.text-blue-bold {
+    color:#005A92!important;
+    font-weight: bold;
+}
+
+.form-label{
+    font-family: "Averta-Light", sans-serif;
+    font-size: 15px  !important;
+    font-weight: bold;
+}
+.bg-blue-dark{
+    background-color:#005A92!important
+}
+
+.label-content-modal{
+    font-weight: bold;
+}
+
+.btn-file,.btnEnviar {
+    background-color:#005A92!important
+}
+
+.select2-selection, .select2-hidden-accessible {
+    height: auto !important;
+    font-size:13px !important;
+}
+
+.minha-div {
+    min-width: 250px; /* Tamanho mínimo de 250px */
+    width: 21%; /* Tamanho inicial de 50% da largura do contêiner pai */
+    max-width: 100%; /* Tamanho máximo de 100% da largura do contêiner pai */
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+}
+
+.labelInternacional{
+    font-size: 16px !important;
+}
+
+.btnLimpar{
+    border-color:#3094C1!important;
+    color:#3094C1!important;
+    font-family: 'Averta-bold';
+    font-size: 12px !important;
+    font-weight: bold;
+}
+
+.btnEnviar{
+    border-color:#115B90!important;
+    color:#ffffff!important;
+    font-family: 'Averta-bold';
+    font-size: 12px !important;
+}
+.custom-file-label {
+    max-width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Estilo para o campo de entrada */
+.custom-input {
+    max-width: 270px; /* Tamanho mínimo de 250px */
+    width: 100%; /* Preencher o contêiner pai */
+}
+/* Regra de mídia para ajustar o tamanho em telas menores */
+@media (max-width: 768px) {
+    .custom-input {
+        min-width: auto; /* Remover tamanho mínimo */
+    }
+}

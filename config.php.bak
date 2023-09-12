@@ -1,0 +1,61 @@
+<?php
+
+//Ferramenta de Debug
+//require 'kint.phar';
+//require 'tracy.phar';
+//Debugger::enable();
+function configure() {
+     
+
+        $db = null;
+        $db_files = null;
+
+        
+	define('HOST', '10.120.100.14');
+    define('USER', 'root');
+	define('PASS', 'pge$rdm$328');
+	define('DBNAME', 'beneficios');
+	define('DBNAMEFILES', 'beneficios_files');
+	define('PORT', '3306');
+        $env = $_SERVER['HTTP_HOST'] == "mysql-php" ? ENV_DEVELOPMENT : ENV_PRODUCTION;
+        set('env', $env);
+        option('debug', true);
+        option('session', true);
+
+        try{
+                $db = new pdo('mysql:host=' . HOST . ';dbname=' . DBNAME, USER, PASS,
+                        array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8 COLLATE utf8_general_ci"));
+
+
+                $db->setAttribute( PDO::ATTR_TIMEOUT, 5 );   
+                $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );   
+        
+        }catch(Exception $genericMainError){
+                echo ("Entre em contato com o Administrador do Sistema. Código xB001");
+        }
+        
+        try{
+                //Validar conexão ao segundo banco
+                $db_files = new pdo('mysql:host=' . HOST . ';dbname=' . DBNAMEFILES, USER, PASS,array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8 COLLATE utf8_general_ci"));
+                $db_files->setAttribute( PDO::ATTR_TIMEOUT, 5 );   
+                $db_files->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );   
+        }catch(Exception $genericFilesError){
+                echo ("Entre em contato com o Administrador do Sistema. Código xB002");
+        }
+        
+
+        option('db_conn', $db);
+        option('db_conn_files', $db_files);
+      
+
+        define('MB', 1048576);
+        define('MAX_FILE_SIZE', 2); //tamanho m�ximo em MB
+
+        define('BASEPATH', '/assets');
+        define('BASEURL', 'http://10.120.100.165/beneficios');
+        define('URL_ERGON', 'http://10.120.100.165/servico_ergon');
+        define('URL_ORC', '10.120.100.165');
+	define('BASEURL_RH', 'http://10.120.100.165/sigrh_mysql');
+        
+
+}

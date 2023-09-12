@@ -1,0 +1,38 @@
+CREATE TABLE `solicitacao` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`protocolo_id` INT(11) UNSIGNED NOT NULL,
+	`colaborador` VARCHAR(100) NULL DEFAULT NULL COMMENT 'cpf do colaborador' COLLATE 'utf8_general_ci',
+	`colaborador_nome` VARCHAR(100) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`dependente` VARCHAR(100) NULL DEFAULT NULL COMMENT 'id do dependente' COLLATE 'utf8_general_ci',
+	`dependente_nome` VARCHAR(100) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`valor` DECIMAL(10,2) NULL DEFAULT NULL,
+	`competencia` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`status` VARCHAR(100) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`id_folha` INT(11) NULL DEFAULT NULL,
+	`valor_teto_id` INT(11) UNSIGNED NULL DEFAULT NULL,
+	`valor_disponivel` DECIMAL(10,2) NULL DEFAULT NULL,
+	`data_cadastro` TIMESTAMP NULL DEFAULT NULL,
+	`observacao` TEXT NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`beneficio_tipos_id` INT(11) UNSIGNED NULL DEFAULT NULL,
+	`beneficiario` CHAR(1) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`tipo_documentos_id` INT(11) UNSIGNED NOT NULL,
+	`lancamento_contratual_id` INT(11) UNSIGNED NULL DEFAULT NULL,
+	`moeda_id` INT(11) UNSIGNED NOT NULL,
+	`cpf_cnpj_cr` VARCHAR(20) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `lancamento_contratual_id` (`lancamento_contratual_id`) USING BTREE,
+	INDEX `beneficio_tipos_id` (`beneficio_tipos_id`) USING BTREE,
+	INDEX `moeda_id` (`moeda_id`) USING BTREE,
+	INDEX `FK_solicitacao_protocolo` (`protocolo_id`) USING BTREE,
+	INDEX `valor_teto_id` (`valor_teto_id`) USING BTREE,
+	INDEX `tipo_documento` (`tipo_documentos_id`) USING BTREE,
+	CONSTRAINT `FK_solicitacao_tipo_documentos` FOREIGN KEY (`tipo_documentos_id`) REFERENCES `tipo_documentos` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+	CONSTRAINT `FK_solicitacao_beneficio_tipos` FOREIGN KEY (`beneficio_tipos_id`) REFERENCES `beneficio_tipos` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+	CONSTRAINT `FK_solicitacao_lancamento_contratual` FOREIGN KEY (`lancamento_contratual_id`) REFERENCES `lancamento_contratual` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+	CONSTRAINT `FK_solicitacao_moeda` FOREIGN KEY (`moeda_id`) REFERENCES `moeda` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+	CONSTRAINT `FK_solicitacao_protocolo` FOREIGN KEY (`protocolo_id`) REFERENCES `protocolo` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION,
+	CONSTRAINT `FK_solicitacao_valor_teto` FOREIGN KEY (`valor_teto_id`) REFERENCES `valor_teto` (`id`) ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=1;

@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Averta-Regular';
+    src: url('assets/fonts/Averta-Regular.otf') format('otf'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.select-modal {
+    appearance: auto !important;
+   -webkit-appearance: auto !important;
+   -moz-appearance: auto !important;
+}
+
+.conteudo-form{
+    margin-top:35px !important;
+}
+
+label{
+    margin-bottom: 5px !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    line-height: 2;
+    font-family: 'Averta-Regular',sans-serif !important;
+}
+
+.breadcrumb {
+    background-color: transparent !important;
+    padding: 0 0 0 0 !important;
+    font-size: 14px !important;
+}
+
+.breadcrumb a {
+    color: #005A92 !important;
+    text-decoration: none;
+}
+
+.texto-breadcrumb{
+    color: #005A92 !important;
+    font-weight: bold !important;
+}
+
+.beneficio-cadastrado{
+    height: 40px;
+    width: 100%;
+    background: rgba(3, 151, 0, 0.3);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-beneficio-cadastrado{
+    text-align: center;
+    margin-bottom: 0px !important;
+    font-size: 13px;
+    font-family: 'Averta-bold';
+    font-style: normal;
+    font-weight: bold;
+}
+
+.beneficio-nao-cadastrado{
+    height: 40px;
+    width: 100%;
+    background: rgba(255, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-beneficio-nao-cadastrado{
+    text-align: center;
+    margin-bottom: 0px !important;
+    font-size: 13px;
+    font-family: 'Averta-bold';
+    font-style: normal;
+    font-weight: bold;
+}
+
+.beneficio-alterado{
+    height: 40px;
+    width: 100%;
+    background: rgba(3, 151, 0, 0.3);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-beneficio-alterado{
+    text-align: center;
+    margin-bottom: 0px !important;
+    font-size: 13px;
+    font-family: 'Averta-bold';
+    font-style: normal;
+    font-weight: bold;
+}
+
+.beneficio-nao-alterado{
+    height: 40px;
+    width: 100%;
+    background: rgba(255, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-beneficio-nao-alterado{
+    text-align: center;
+    margin-bottom: 0px !important;
+    font-size: 13px;
+    font-family: 'Averta-bold';
+    font-style: normal;
+    font-weight: bold;
+}
+
+.campo-nao-preenchido{
+    height: 40px;
+    width: 100%;
+    background: rgba(255, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-campo-nao-preenchido{
+    text-align: center;
+    margin-bottom: 0px !important;
+    font-size: 13px;
+    font-family: 'Averta-bold';
+    font-style: normal;
+    font-weight: bold;
+}
+
+.erro-validacao-form{
+    height: 40px;
+    width: 100%;
+    background: rgba(255, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-erro-validacao-form{
+    text-align: center;
+    margin-bottom: 0px !important;
+    font-size: 13px;
+    font-family: 'Averta-bold';
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.bi-check-circle-fill{
+    color: #368D00 !important;
+    font-size: 16px !important;
+    margin-right: 10px !important;
+}
+
+.bi-exclamation-circle-fill{
+    color: red !important;
+    font-size: 16px !important;
+    margin-right: 10px !important;
+}
+
+.exclamation-validacao{
+    color: red !important;
+    font-size: 16px !important;
+    margin-top: 10px !important;
+    position: absolute !important;
+}
+
+.modal-header{
+    background-color: #005A92 !important;
+    color: white !important;
+    max-height: 50px !important;
+}
+
+.modal-title {
+    line-height: 1 !important;
+}
+
+.modal-content{
+    border-radius: 8px !important;
+}
+
+.label-content-modal{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.conteudo-modal{
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+
+.btn-close{
+    color:white !important;
+}
+
+.bt-grupo{
+    float:right !important;
+}
+
+.editar{
+    cursor: pointer;
+    color: #005A92;
+}
+
+.edit-form{
+    margin-top: 15px;
+}
+
+#tipoBeneficio, #diaLimite {
+    color: #888888 !important;
+}
+
+
+@media (max-width: 780px) {
+    .beneficio-input, .dialimite-input{
+         width: 100%;
+    }
+
+    .radio-input{
+        width:50%;
+    }
+ 
+    .dialimite-input{
+         margin-top: 20px;
+    }
+
+    .enviar-input {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+ 
+ }

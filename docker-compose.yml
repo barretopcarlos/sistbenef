@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  web:
+    image: php:7.2-apache
+    build:
+      context: ./
+      dockerfile: php7.2.dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/html
+      - ./extras/php.ini:/etc/local/etc/php/php.ini
+
+  db:
+    image: mysql:5.7
+    container_name: "mysql-php"
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password # Defina uma senha segura aqui
+      MYSQL_DATABASE: beneficios
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: dev
+    volumes:
+      - ./extras/db:/docker-entrypoint-initdb.d # Pasta onde será colocado o arquivo .sql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: root_password # Use a mesma senha definida para o MySQL
+networks:
+  bridge:
+    external: true

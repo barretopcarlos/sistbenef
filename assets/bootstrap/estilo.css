@@ -1,0 +1,484 @@
+    .headerImage {
+        display:inline-block;
+        vertical-align:top;
+    }
+
+    .headerTitulo {
+        display:inline-block;
+        padding-left: 35px;
+        color: #424B94;
+        text-transform: uppercase; 
+        font-size: medium;
+    }
+
+
+    * {
+        /* box-sizing: border-box;*/
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+
+    /* Style the top navigation bar */
+    .main_menu {
+        overflow: hidden;
+        background-color: #0069A8;
+    }
+
+    /* Style the topnav links */
+    .main_menu a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.8s;
+        
+    }
+
+    /* Change color on hover */
+    .main_menu a:hover {
+        background-color: #0086D6;
+        color: #f2f2f2;
+    }
+
+
+    .menu {
+        overflow: hidden;
+
+    }
+
+    /* Style the topnav links */
+    .menu a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 8px;
+        text-decoration: none;
+        background-color: #04AA6D;
+        border-radius: 5px;
+        margin-right: 5px;
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+
+
+    /* Change color on hover */
+    .menu a:hover {
+        background-color: #46a049;
+        color: #f2f2f2;
+    }
+
+    /* Style the content */
+    .content {
+        background-color: #ddd;
+        padding: 10px;
+        height: 200px;
+        /* Should be removed. Only for demonstration */
+    }
+
+    /* Style the footer */
+    .footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+    }
+
+
+    .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: left;
+    }
+
+
+
+    table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    table td,
+    #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    table tr:hover {
+        background-color: #ddd;
+    }
+
+    table th {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-align: left;
+        background-color: #333333ad;
+        color: white;
+    }
+
+    .color_page {
+        background: #ccf;
+    }
+
+    .box div,
+    .box ul {
+        float: right;
+        font-size: smaller;
+    }
+
+    .box span{
+        font-size: smaller !important;
+    }
+
+    td a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 4px;
+        margin-right: 4px;
+        margin-left: 4px;
+        text-decoration: none;
+        background-color: gray;
+        border-radius: 5px;
+    }
+
+    td form {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 4px;
+        margin-right: 4px;
+        margin-left: 4px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    td a:hover {
+        background-color: darkgray;
+    }
+    
+
+
+    @media screen and (max-width:600px) {
+
+        .column {
+
+        width: 100%;
+
+        }
+
+    }
+
+
+
+    a {
+
+    display: block; 
+
+    }
+
+
+
+    body,div,span,h1,h2,p,a,em,img,ul,li,form{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+p{margin:1em 0px;}
+em{font-style:italic;}
+div{display:block;}
+body{line-height:1.25;}
+ul{list-style:none;}
+input::-moz-focus-inner{padding:0;border:0;}
+/*! CSS Used from: https://pge.rj.gov.br/site/code/Estilo.css */
+.menu{font-size:100%;}
+.desktop-super,.desktop-medio,.desktop-mini,.desktop,.tablet,.celular-medio,.celular-mini,.celular{position:fixed;z-index:10000;display:none;margin-right:10px;font-size:16px;text-shadow:2px 1px 2px rgba(0, 0, 0, 1);color:#ffffff;}
+body{position:relative;margin:0;padding:0;font-family:'Open Sans', sans-serif;font-size:14px;color:#191919;}
+img{border:0;}
+.limpar{clear:both;display:block;}
+h1,h2{display:block;}
+a{font-family:inherit;font-size:100%;text-decoration:none;color:inherit;}
+a:hover{text-decoration:underline;}
+body.site{background-color:#f5f5f5;min-width:320px;}
+input{font-family:'Open Sans', sans-serif;}
+input[type=text]{-webkit-appearance:none;}
+.filler{height:0!important;min-height:0!important;width:100%!important;background-color:transparent!important;border:0!important;margin:0!important;padding:0!important;background-image:none!important;margin-top:-1px!important;display:inline-block;}
+.tela{max-width:1120px;padding:0 15px;margin:auto;}
+.relativa{position:relative;}
+.topo{z-index:100;margin-bottom:20px;}
+.topo .pre-topo{display:none;background-color:#223161;height:60px;border-bottom:2px solid #005fa2;}
+.topo .pre-topo .links{position:absolute;right:60px;top:0;line-height:60px;font-size:32px;color:#c5cbda;}
+.topo .pre-topo .links a{color:#fff;text-decoration:none;display:inline-block;margin:0 15px;padding-top:17px;}
+.topo .menu-topo{padding:10px 0;text-align:center;border-bottom:1px solid #e1e1e1;}
+.topo .menu-topo .logo{height:65px;}
+.topo .menu-topo .abrir-menu{position:absolute;left:10px;top:15px;padding:10px;}
+.topo .menu-topo .contraste{position:absolute;right:100px;top:23px;}
+.topo .menu-aberto .fechar-menu{position:absolute;right:20px;top:20px;display:none;z-index:500;}
+.topo .menu-aberto{display:none;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;margin-bottom:10px;}
+.topo .menu-topo .busca-botao{position:absolute;display:block;right:11px;top:21px;width:27px;height:27px;z-index:5;background-image:url("https://pge.rj.gov.br/site/img/lupa.png");background-position:center center;background-repeat:no-repeat;}
+.topo .menu-topo .busca{display:none;position:absolute;right:0;top:8px;line-height:50px;border:1px solid transparent;z-index:10;background-color:#e5e5e7;border:1px solid #000000;-moz-border-radius:25px;-webkit-border-radius:25px;border-radius:25px;width:250px;padding-right:35px;box-sizing:border-box;}
+.topo .menu-topo .busca input[type=text]{display:block;border:0;background-color:transparent;line-height:50px;height:50px;padding:0 10px 0 10px;width:100%;box-sizing:border-box;}
+.topo .menu-topo .busca input[type=image]{position:absolute;right:10px;top:50%;margin-top:-13px;}
+.topo .menu-aberto .menu li{position:relative;display:inline-block;margin-bottom:-1px;}
+.topo .menu-aberto .menu a{position:relative;font-size:12px;color:#000000;text-transform:uppercase;display:inline-block;margin:0 5px;text-decoration:none;font-weight:500;}
+.topo .menu-aberto .menu a img{display:none;position:absolute;top:50%;margin-top:-2px;right:20px;-webkit-filter:brightness(0) grayscale(100%);filter:brightness(0) grayscale(100%);}
+.topo .menu-aberto .menu a span{display:inline-block;padding:25px 0;border-bottom:1px solid transparent;}
+.topo .menu-aberto .menu .ativo span,.topo .menu-aberto .menu a:hover span{color:#40539c;border-bottom:1px solid #40539c;}
+.topo .menu-aberto .menu ul li ul{display:none;position:absolute;left:0;top:100%;background-color:#ffffff;z-index:500;padding:5px 0;}
+.topo .menu-aberto .menu ul li ul li a{min-width:220px;padding:0 20px;margin:0;}
+.topo .menu-aberto .menu ul li ul li a span{padding:10px 0;border:0;}
+.topo .menu-aberto .menu ul li ul li a:hover{background-color:#ededef;color:#40539c;}
+.topo .menu-aberto .menu ul li ul li a:hover span{border:0;}
+.pe .acessos{background-color:#ffffff;font-size:16px;color:#2f2f2f;text-transform:uppercase;text-align:center;padding:13px 20px 10px 20px;}
+.pe .acessos .endereco a{display:inline-block;vertical-align:middle;margin-right:10px;}
+.pe .acessos .altura{height:55px;width:10px;}
+.pe .acessos span{display:inline-block;vertical-align:middle;text-align:left;}
+.pe .acessos img{margin:0 3px;padding:2px;display:inline-block;vertical-align:middle;}
+.pe .acessos a img{-webkit-filter:brightness(0.9) grayscale(100%);filter:brightness(0.9) grayscale(100%);}
+.pe .acessos a:hover img{-webkit-filter:none;filter:none;}
+.pe .pre-pe{padding:30px 0;background-image:url("https://pge.rj.gov.br/site/img/f_pe.png");background-position:top center;text-align:center;}
+.pe .pre-pe img{margin-bottom:10px;}
+.pe .pre-pe a{font-size:12px;color:#9a9a9a;text-transform:uppercase;}
+.pe .copyright{background-image:url("https://pge.rj.gov.br/site/img/f_copyright.png");background-position:top center;color:#c3c3c3;text-align:center;font-size:12px;}
+.pe .copyright .tela{padding:30px 10%;}
+.pe .copyright img{margin-bottom:10px;}
+.pe .pos-pe{background-color:rgba(0,0,0,0.3);height:25px;}
+.meio .migalha{font-size:14px;color:#a9a8b4;margin-bottom:20px;}
+.meio .migalha a{color:#a9a8b4;}
+.meio .migalha em{display:inline-block;-moz-transform:scale(0.6, 1.2) translateY(1px);-webkit-transform:scale(0.6, 1.2) translateY(1px);-o-transform:scale(0.6, 1.2) translateY(1px);-ms-transform:scale(0.6, 1.2) translateY(1px);transform:scale(0.6, 1.2) translateY(1px);font-style:normal;margin:0 3px 20px 3px;}
+.interna h1{font-size:44px;color:#40539c;font-weight:900;margin-bottom:30px;}
+.interna h2{font-size:22px;font-weight:bold;margin-bottom:10px;}
+.interna .meio{padding-bottom:50px;}
+.interna .meio .lista-arquivos li{position:relative;padding:14px 140px 14px 0;border-bottom:1px solid #d8d8d8;box-sizing:border-box;min-height:62px;}
+.interna .meio .lista-arquivos li .titulo{font-size:14px;color:#40539c;font-weight:bold;text-transform:uppercase;}
+.interna .meio .lista-arquivos li a{position:absolute;display:block;right:0;top:14px;font-size:12px;width:105px;color:#ffffff;background-color:#40539c;text-transform:uppercase;background-image:url("https://pge.rj.gov.br/site/img/nuvem.png");background-position:17px center;background-repeat:no-repeat;padding:10px 20px 8px 40px;box-sizing:border-box;text-align:center;}
+.interna .meio .lista-blocos{margin-left:-1%;width:101%;overflow:hidden;margin-bottom:40px;}
+/*.interna .meio .lista-blocos li{float:left;position:relative;display:inline-block;vertical-align:top;margin:0 1% 20px 1%;width:23%;box-sizing:border-box;}*/
+.interna .meio .lista-blocos li a{display:block;padding-top:50%;background-color:#ffffff;}
+.interna .meio .lista-blocos li .texto{display:block;position:absolute;left:0;right:0;bottom:0;padding:15px;font-size:40px;font-weight:bold;z-index:10;box-sizing:border-box;}
+.interna .meio .lista-blocos li a:hover{background-color:#40539c;}
+.interna .meio .lista-blocos li a:hover .texto{color:#ffffff;}
+.interna .meio .p-foto{display:inline-block;margin-bottom:10px;max-width:100%;}
+.interna .meio .p-foto img{max-width:100%;}
+
+    /*! CSS Used from: https://pge.rj.gov.br/site/code/Desktop.css ; media=(min-width: 980px) */
+
+    @media (min-width: 980px){
+
+    .desktop{display:inline-block!important;}
+
+    .topo .pre-topo{display:block;}
+
+    .topo .menu-topo{text-align:left;padding:15px 0;border-top:2px solid #5f9dc4;}
+
+    .topo .menu-topo .logo{float:left;}
+
+    .topo .menu-topo .abrir-menu{display:none;}
+
+    .topo .menu-aberto{display:block;}
+
+    .topo .menu-aberto .menu li.menu-auxiliar{display:none;}
+
+    .interna .meio .lista-blocos-esquerda li{width:48%;max-width:250px;}
+
+    }
+
+    /*! CSS Used from: https://pge.rj.gov.br/site/code/DesktopSuper.css ; media=(min-width: 1367px) */
+
+    @media (min-width: 1367px){
+
+    .desktop-super{display:inline-block!important;}
+
+    }
+
+    /*! CSS Used from: https://pge.rj.gov.br/site/code/DesktopMedio.css ; media=(min-width: 1201px) and (max-width: 1366.99px) */
+
+    @media (min-width: 1201px) and (max-width: 1366.99px){
+
+    .desktop-medio{display:inline-block!important;}
+
+    .pe .acessos{text-align:justify;}
+
+    .pe .acessos .endereco a{width:260px;}
+
+    .pe .acessos .acompanhe{width:260px;}
+
+    }
+
+    /*! CSS Used from: https://pge.rj.gov.br/site/code/DesktopMini.css ; media=(min-width: 980px) and (max-width: 1200.99px) */
+
+    @media (min-width: 980px) and (max-width: 1200.99px){
+
+    .desktop-mini{display:inline-block!important;}
+
+    }
+
+    /*! CSS Used from: https://pge.rj.gov.br/site/code/Tablet.css ; media=(min-width: 768px) and (max-width: 979.99px) */
+
+    @media (min-width: 768px) and (max-width: 979.99px){
+
+    .tablet{display:inline-block!important;}
+
+    .interna h1{font-size:34px;}
+
+    .interna .meio .lista-blocos li{margin:0 1% 15px 1%;width:31.3333%;}
+
+    }
+
+    /*! CSS Used from: https://pge.rj.gov.br/site/code/Celular.css ; media=(max-width: 767.99px) */
+
+    @media (max-width: 767.99px){
+
+    .celular{display:inline-block!important;}
+
+    .topo .menu-topo .contraste{display:none;}
+
+    .topo .menu-topo .busca{top:100%;margin-top:11px;width:100%;border:0px;padding-top:10px;padding-bottom:10px;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;}
+
+    .pe .acessos .altura{display:none;}
+
+    .pe .acessos span{display:block;padding:5px 0;text-align:center;}
+
+    .pe .acessos .endereco a{margin-right:0px;}
+
+    .interna h1{font-size:26px;}
+
+    .interna .meio .lista-blocos li{margin:0 1% 10px 1%;width:48%;}
+
+    }
+
+    /*! CSS Used from: https://pge.rj.gov.br/site/code/CelularMedio.css ; media=(min-width: 480px) and (max-width: 767.99px) */
+
+    @media (min-width: 480px) and (max-width: 767.99px){
+
+    .celular-medio{display:inline-block!important;}
+
+    }
+
+    /*! CSS Used from: https://pge.rj.gov.br/site/code/CelularMini.css ; media=(max-width: 479.99px) */
+
+    @media (max-width: 479.99px){
+
+    .celular-mini{display:inline-block!important;}
+
+    .interna .meio .lista-arquivos li{padding-right:14px;}
+
+    .interna .meio .lista-arquivos li a{margin-top:14px;position:static;display:block;}
+
+    .interna .meio .lista-blocos{margin-left:0;width:100%;}
+
+    .interna .meio .lista-blocos li{margin:0 0 15px 0;width:100%;}
+
+    .pe .acessos .endereco img,.pe .acessos .email img{display:block;margin:0 auto;}
+
+    }
+
+
+
+
+
+        @keyframes loading {
+
+            0% {
+
+            background-position: 0;
+
+            }
+
+
+
+            50% {
+
+            background-position: -30%;
+
+            }
+
+
+
+            80% {
+
+            background-position: -100%;
+
+            }
+
+
+
+            100% {
+
+            background-position: -200%;
+
+            }
+
+        }
+
+
+
+    div.gallery {
+
+        margin: 60px;
+
+        border: 1px solid #ccc;
+
+        float: left;
+
+        width: 300px;
+
+        margin-left: 450px;
+
+
+
+    }
+
+
+
+
+
+    div.gallery:hover {
+
+        border: px solid #777;
+
+    }
+
+
+
+    div.gallery img {
+
+        width: 100%;
+
+        height: auto;
+
+    }
+
+
+
+    div.table {
+
+        padding: 39px;
+
+        text-align: left;
+
+        font-size: small;
+
+        margin-top: -50px;
+
+
+
+    }
+
+
+
+    h1 {
+
+        font-size: 20px;
+
+        margin-left: 90px;
+
+        margin-top:
+
+    }
+
+
